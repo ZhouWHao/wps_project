@@ -1,0 +1,9 @@
+{
+  "appId": "com.tenderer.exam",
+  "id": "Exam1",
+  "name": "考试1",
+  "version": "0.0.1",
+  "type": "service",
+  "source": "file://service-com.tenderer.exam-1.0.0",
+  "internal": false
+}

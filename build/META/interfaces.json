@@ -1,0 +1,44 @@
+[
+  {
+    "id": "kntp://Exam1/GET/api/ping",
+    "name": "kntp://Exam1/GET/api/ping",
+    "desc": "",
+    "gateways": "c",
+    "permissions": []
+  },
+  {
+    "id": "kntp://Exam1/GET/api/auth",
+    "name": "kntp://Exam1/GET/api/auth",
+    "desc": "",
+    "gateways": "c",
+    "permissions": []
+  },
+  {
+    "id": "kntp://Exam1/GET/api/userinfo",
+    "name": "kntp://Exam1/GET/api/userinfo",
+    "desc": "",
+    "gateways": "c",
+    "permissions": []
+  },
+  {
+    "id": "kntp://Exam1/GET/api/forwards",
+    "name": "kntp://Exam1/GET/api/forwards",
+    "desc": "",
+    "gateways": "c",
+    "permissions": []
+  },
+  {
+    "id": "kntp://Exam1/POST/api/forwards",
+    "name": "kntp://Exam1/POST/api/forwards",
+    "desc": "",
+    "gateways": "c",
+    "permissions": []
+  },
+  {
+    "id": "kntp://Exam1/POST/api/user_change",
+    "name": "kntp://Exam1/POST/api/user_change",
+    "desc": "",
+    "gateways": "c",
+    "permissions": []
+  }
+]

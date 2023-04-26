@@ -1,0 +1,8 @@
+{
+  "Exam1": {
+    "name": "考试1",
+    "type": "service",
+    "version": "1.0.0",
+    "desc": ""
+  }
+}

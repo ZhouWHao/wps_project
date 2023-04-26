@@ -1,0 +1,12 @@
+{
+  "id": "com.tenderer.exam",
+  "name": "第四次考试-1",
+  "desc": "用于服务商第四次考试应用",
+  "version": "debug1.0.0",
+  "category": 5,
+  "debug": false,
+  "changelog": "",
+  "dependencies": {},
+  "privilegeCompatibleVersions": [],
+  "permissionCompatibleVersions": []
+}

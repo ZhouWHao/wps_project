@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form id="upload-form" method="POST" action="https://t4.wpseco.cn/c/Exam1/api/upload" enctype="multipart/form-data">
+    <input accept=".xlsx,.xls" type="file" name="file"/>
+    <button type="submit">上传</button>
+</form>
+<button id="full-sync">全量同步</button>
+<button id="clean">清理</button>
+
+<script>
+    // handle form submission
+    const form = document.querySelector('#upload-form');
+    form.addEventListener('submit', (event) => {
+        event.preventDefault(); // prevent default form submission
+        const formData = new FormData(form);
+        fetch(form.action, {
+            method: form.method,
+            body: formData
+        })
+          .then(response => {
+              if (!response.ok) {
+                  throw new Error('上传文件失败');
+              }
+              alert('上传文件成功');
+          })
+          .catch(error => {
+              console.error(error);
+              alert(error.message);
+          });
+    });
+
+    // handle full-sync button click
+    const fullSyncButton = document.querySelector('#full-sync');
+    fullSyncButton.addEventListener('click', () => {
+        fetch('https://t4.wpseco.cn/c/Exam1/api/full-sync', {
+            method: 'POST'
+        })
+          .then(response => {
+              if (!response.ok) {
+                  throw new Error('全量同步失败');
+              }
+              alert('全量同步成功');
+          })
+          .catch(error => {
+              console.error(error);
+              alert(error.message);
+          });
+    });
+
+    // handle clean button click
+    const cleanButton = document.querySelector('#clean');
+    cleanButton.addEventListener('click', () => {
+        fetch('https://t4.wpseco.cn/c/Exam1/api/clean', {
+            method: 'POST'
+        })
+          .then(response => {
+              if (!response.ok) {
+                  throw new Error('清理失败');
+              }
+              alert('清理成功');
+          })
+          .catch(error => {
+              console.error(error);
+              alert(error.message);
+          });
+    });
+</script>
+</body>
+</html>
